@@ -11,35 +11,43 @@ with DAG(
 ) as dag:
     
     t1 = BashOperator(
-        task_id="t1"
+        task_id="t1",
+        bash_command="t1"
     )
      
     t2 = BashOperator(
-        task_id="t2"
+        task_id="t2",
+        bash_command="t2"
     )
 
     t3 = BashOperator(
-        task_id="t3"
+        task_id="t3",
+        bash_command="t3"
     )    
 
     t4 = BashOperator(
-        task_id="t4"
+        task_id="t4",
+        bash_command="t4"
     )
 
     t5 = BashOperator(
-        task_id="t5"
+        task_id="t5",
+        bash_command="t5"
     )
 
     t6 = BashOperator(
-        task_id="t6"
+        task_id="t6",
+        bash_command="t6"
     )
 
     t7 = BashOperator(
-        task_id="t7"
+        task_id="t7",
+        bash_command="t7"
     )
 
     t8 = BashOperator(
-        task_id="t8"
+        task_id="t8",
+        bash_command="t8"
     )
 
     t1 >> [t2, t3] >> t4
